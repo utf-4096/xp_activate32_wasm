@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xp_activate32</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <script type="module" src="assets/js/main.js"></script>
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <main>
+        <h1>
+            <img src="assets/icons/application_xp_terminal.png">
+            xp_activate32 (webassembly)
+        </h1>
+
+        <p id="source">
+            Source code:
+            <a href="https://github.com/utf-4096/xp_activate32_wasm">
+                https://github.com/utf-4096/xp_activate32_wasm
+            </a>
+        </p>
+
+        <label for="key-in">Installation ID</label>
+        <fieldset>
+            <img src="assets/icons/key.png">
+            <input
+                id="key-in"
+                type="text"
+                placeholder="111111-222222-333333-444444..."
+                autocomplete="off"
+            >
+        </fieldset>
+
+        <label for="key-out">Confirmation ID</label>
+        <fieldset>
+            <img src="assets/icons/wand.png">
+            <input
+                id="key-out"
+                type="text"
+                placeholder="Generated ID will be inserted here"
+                readonly
+                disabled
+            >
+        </fieldset>
+
+        <div>
+            <div id="error-container" style="display: none;">
+                <img src="assets/icons/exclamation.png">
+                <span id="error"></span>
+            </div>
+
+            <button id="generate">
+                <img src="assets/icons/arrow_right.png">
+            </button>
+        </div>
+    </main>
+</body>
+</html>
